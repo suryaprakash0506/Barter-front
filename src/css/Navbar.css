@@ -1,0 +1,318 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* scroll-behavior: smooth; */
+}
+
+/* Giving padding to navbar container */
+.nav-container {
+    background-color: white;
+    border-bottom: ipx solid rgba(0, 0, 0, 0.86);
+    position: sticky;
+    left: 0;
+    /* padding: 0 100px; */
+    top: 0;
+    /* width: 100vw; */
+    width: 100%;
+    /* z-index: 100; */
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    min-height: 100%;
+    max-width: 1128px;
+    /* display: grid;
+    align-items: center; 
+    grid-template-columns: 100px 1fr 2fr 1fr 100px; */
+}
+
+.nav-logo {
+    margin-right: 10px;
+    font-size: 0px;
+    grid-column: 2/3;
+}
+
+/* Logo of the website */
+.nav-logo-img {
+    height: 31px;
+    border-radius: 4px;
+}
+
+/* Login and Signup buttons */
+/* .nav-ul-li{ 
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+} */
+
+.bx-menu {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .nav-items {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem 0 1rem;
+        text-align: center;
+        background-color: white;
+        transition: 0.4s;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 1rem 1rem;
+        /* z-index: var(--z-fixed); */
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .bx-menu {
+        display: block;
+        position: abolute;
+    }
+    .nav-right-li {
+        display: none;
+    }
+    .nav-container {
+        padding: 4px 10px;
+        width: 100%;
+    }
+}
+
+/* Navbar items - justified space-between */
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Nav- left side */
+.nav-left-ul {
+    display: flex;
+    list-style: none;
+    margin-left: 12px;
+}
+.nav-left-li {
+    display: inline-block;
+    margin-right: 17px;
+    text-decoration: none;
+}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+/* .nav-link::after {
+    content: "";
+    width: 0;
+    height: 5px;
+    background: #ff004f;
+    background: rgb(97, 61, 42);
+    color: white;
+    position: absolute;
+    left: 0;
+    margin-top: 22px;
+    transition: 0.3s;
+    z-index: 200;
+} */
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Nav- right side */
+.nav-right-ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 12px;
+}
+.nav-right-li {
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* Nav-upload */
+.nav-upload {
+    border: 1px solid transparent;
+    background-color: rgb(255, 177, 60);
+    padding: 8px 18px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.nav-upload:hover {
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.nav-btn-login {
+    padding: 8px 18px;
+    background-color: #f5f8ff;
+    border: 1px solid #dee8ff;
+    color: #0057ff;
+    border-radius: 22px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.nav-btn-signup {
+    border: 1px solid transparent;
+    padding: 8px 18px;
+    background-color: #0057ff;
+    color: white;
+    border-radius: 22px;
+    font-size: 15px;
+}
+/* signup -login button */
+.nav-btn-login:hover,
+.nav-btn-signup:hover {
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+/* .nav{
+    margin-left: auto;
+    display: block;
+    @media (max-width: 768px) {
+        position: fixed;
+        left: 0;
+        background: white;
+        width: 100%;
+    }
+} */
+/* @media (max-width:768px){
+ .nav{
+    position: fixed;
+    left: 0;
+    background: white;
+    width: 100%;
+ }
+} */
+/* 
+.nav-list-wrap{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list>a{
+    align-items: center;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 1.5;
+    min-height: 42px;
+    min-width: 80px;
+    position: relative;
+    text-decoration: none;
+}
+.nav-list>span{
+    color: rgb(0, 0, 0,0.6);
+}
+ */
+
+/*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Giving padding to navbar container */
+/* .nav-container{
+    background-color: white;
+    border-bottom: ipx solid rgba(0, 0, 0, 0.86);
+    left: 0;
+    padding-right: 0 24px;
+    position: fixed;
+    top: 0;
+    width: 100vw; */
+/* display: flex; */
+/* align-items: center;
+    box-shadow: 0px 0px 1px 0px rgb(73, 73, 73);
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.19), 0 0px 7px 0 rgba(0, 0, 0, 0.19); */
+/* z-index: 100;
+} */
+
+/* Logo of the website */
+/* .nav-logo-img{
+    height: 37px;
+    border-radius: 12px;
+} */
+
+/* Navbar items - justified space-between */
+/* .nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+} */
+
+/* Nav- left side */
+/* .nav-left-ul{
+    display: flex;
+    list-style: none;
+    margin: 12px;
+}
+.nav-left-li{
+    margin: 17px;
+    text-decoration: none;
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+} */
+
+/* Nav- right side */
+/* .nav-right-ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 12px;
+}
+.nav-right-li{
+    margin: 10px;
+    text-decoration: none;
+} */
+/* Nav-upload */
+/* .nav-upload{
+    border: 1px solid transparent;
+    background-color: rgb(255, 177, 60);
+    padding: 8px 18px;
+    border-radius: 4px;
+    margin-left: 17px;
+} */
+/* Login and Signup buttons */
+/* .nav-btn-login{
+    padding: 8px 18px;
+    background-color: #f5f8ff;
+    border: 1px solid #dee8ff;
+    color: #0057ff;
+    border-radius: 22px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.nav-btn-signup{
+    border: 1px solid transparent;
+    padding: 8px 18px;
+    background-color: #0057ff;
+    color: white;
+    border-radius: 22px;
+    font-size: 15px;
+} */
+/* signup -login button */
+/* .nav-btn-login:hover, .nav-btn-signup:hover{
+    cursor: pointer;
+    border: 1px solid black;
+} */

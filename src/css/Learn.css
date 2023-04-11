@@ -1,0 +1,33 @@
+.learn-container{
+    background-color: #0f0c27;
+    color: white;
+    height: 89.3vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.learn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.learn h1{
+    margin-bottom: 30px;
+    font-size: 70px;
+    color: rgb(204, 204, 10);
+}
+.learn h1 span{
+    color: rgb(218, 26, 26);
+}
+.learn h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.learn p{
+    margin-bottom: 6px;
+    font-size: 22px;
+}
+
+

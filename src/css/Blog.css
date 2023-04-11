@@ -1,0 +1,31 @@
+.blog-container{
+    background-color: #0f0c27;
+    color: white;
+    height: 89.3vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blog h1{
+    margin-bottom: 30px;
+    font-size: 70px;
+    color: rgb(204, 204, 10);
+}
+.blog h1 span{
+    color: rgb(187, 17, 17);
+}
+.blog h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.blog p{
+    margin-bottom: 6px;
+    font-size: 22px;
+}

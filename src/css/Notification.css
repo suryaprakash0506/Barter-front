@@ -1,0 +1,37 @@
+  
+/* ---------------- */
+.notify__main{
+    /* display: none; */
+    max-height: 50vh;
+    min-width: 17vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 12px;
+    padding: 6px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    overflow-y: scroll;
+    /* margin-top: px; */
+}
+.notify_item{
+    position: relative;
+    min-height:35px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 4px 5px;
+    margin-bottom: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.notify_item > p{
+    margin-left: 4px;
+    font-size: 15px;
+}
+.notify_item >.MuiAvatar-root{
+    height: 27px;
+    width: 27px;
+    margin-right: 5px;
+}

@@ -1,0 +1,119 @@
+.main-login {
+    display: grid;
+    place-content: center;
+    height: 89.3vh;
+    background-color: #0f0c27;
+}
+.login {
+    display: flex;
+    height: 82vh;
+    width: 60vw;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+.login-left {
+    display: flex;
+    flex: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    background: linear-gradient(147deg, rgba(253, 29, 29, 1) 0%, rgba(131, 58, 180, 1) 46%, rgba(47, 135, 177, 1) 81%);
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: -1px 0px 30px -1px black;
+}
+.login-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 50%;
+    color: white;
+    background: linear-gradient(-147deg, rgba(253, 29, 29, 1) 0%, rgba(131, 58, 180, 1) 46%, rgba(47, 135, 177, 1) 81%);
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: -1px 0 0 -1px black;
+    margin-left: 10px;
+}
+.login__rightHead {
+    padding: 10px 50px;
+}
+.login__rightHead > h1 {
+    font-size: 34px;
+}
+
+.login__formContainer {
+    padding: 10px 50px;
+    position: relative;
+    min-width: 30vw;
+}
+.login__formContainer > input {
+    width: 16vw;
+    border-bottom: 2px solid black;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba(219, 219, 219, 0.523);
+    outline-width: 0;
+    color: white;
+    margin: 8px 0px 12px 0px;
+}
+
+/* CheckBox */
+
+.login__checkBox {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+    width: 22vw;
+}
+.login__checkBox > input {
+    border: none;
+    margin: 10px 10px 10px 0px;
+    cursor: pointer;
+}
+.login__checkboxContent {
+    display: flex;
+    justify-content: space-between;
+    width: 196px;
+}
+.login__checkboxContent > a {
+    color: white;
+    cursor: pointer;
+}
+
+/* Button  */
+
+.login__formContainer > button {
+    border: 1px solid white;
+    width: 100px;
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.login__formContainer> button:hover{
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.login__formContainer >p{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.login__formContainer> p > a{
+    color: rgb(0, 183, 255);
+    font-weight: 700;
+}
+
+.login__formContainer ::placeholder{
+    color: rgba(219, 219, 219, 0.523);
+}
