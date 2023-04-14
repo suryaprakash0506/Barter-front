@@ -8,20 +8,25 @@ import { useEffect, useState } from 'react';
 // import {getUserPosts} from "../services/Apis"
 
 const Home = () => {
-	const [loading, setLoading] = useState(true)
+	const [loading, setLoading] = useState();
 	const [posts, setPosts] = useState([]);
 
 	useEffect(() => {
-
+		setLoading(true); // set loading to true before the fetch request is initiated
+	  
 		fetch('https://barter-backend.onrender.com/posts', {
-			method: 'GET',
-			headers: { 'Content-Type': 'application/json' }
+		// fetch('http://localhost:5000/posts', {
+		  method: 'GET',
+		  headers: { 'Content-Type': 'application/json' }
 		})
-			.then(response => response.json())
-			.then(data => setPosts(data))
-			.catch(error => console.error(error));
-			setLoading(false)
-	}, []);
+		  .then(response => response.json())
+		  .then(data => {
+			setPosts(data);
+			console.log(data);
+			setLoading(false); // set loading to false after the data is fetched
+		  })
+		  .catch(error => console.error(error));
+	  }, []);
 
 	return (
 		<>
