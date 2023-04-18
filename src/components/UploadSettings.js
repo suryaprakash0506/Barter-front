@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react'
 import "../css/UploadSettings.css"
 import { Link } from 'react-router-dom'
@@ -24,10 +22,12 @@ const UploadSettings = () => {
             category: formData.category
         };
         // make a POST request with the data object as the request body
+        const token = localStorage.getItem('token');
         fetch('/post', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'token': `${token}`
             },
             body: JSON.stringify(data)
         })
@@ -116,7 +116,7 @@ const UploadSettings = () => {
                                             <p>Graphic design</p>
                                         </div>
                                         <div>
-                                        <input
+                                            <input
                                                 type="checkbox"
                                                 onChange={handleInputChange}
                                                 name="category"
@@ -125,7 +125,7 @@ const UploadSettings = () => {
                                             <p>Illustration</p>
                                         </div>
                                         <div>
-                                        <input
+                                            <input
                                                 type="checkbox"
                                                 onChange={handleInputChange}
                                                 name="category"
@@ -137,7 +137,7 @@ const UploadSettings = () => {
                                     </li>
                                     <li>
                                         <div>
-                                        <input
+                                            <input
                                                 type="checkbox"
                                                 onChange={handleInputChange}
                                                 name="category"
@@ -146,7 +146,7 @@ const UploadSettings = () => {
                                             <p>Interaction Design</p>
                                         </div>
                                         <div>
-                                        <input
+                                            <input
                                                 type="checkbox"
                                                 onChange={handleInputChange}
                                                 name="category"
@@ -155,7 +155,7 @@ const UploadSettings = () => {
                                             <p>Fashion</p>
                                         </div>
                                         <div>
-                                        <input
+                                            <input
                                                 type="checkbox"
                                                 onChange={handleInputChange}
                                                 name="category"
@@ -166,7 +166,7 @@ const UploadSettings = () => {
                                     </li>
                                     <li>
                                         <div>
-                                        <input
+                                            <input
                                                 type="checkbox"
                                                 onChange={handleInputChange}
                                                 name="category"
@@ -175,7 +175,7 @@ const UploadSettings = () => {
                                             <p>Architecture</p>
                                         </div>
                                         <div>
-                                        <input
+                                            <input
                                                 type="checkbox"
                                                 onChange={handleInputChange}
                                                 name="category"
@@ -184,7 +184,7 @@ const UploadSettings = () => {
                                             <p>Advertising</p>
                                         </div>
                                         <div>
-                                        <input
+                                            <input
                                                 type="checkbox"
                                                 onChange={handleInputChange}
                                                 name="category"

@@ -11,10 +11,10 @@ import Forgetpass from './components/Forgetpass';
 import UploadSettings from './components/UploadSettings';
 import Upload from './components/Upload';
 import {initialState, reducer } from '../src/context/UseReducer'
-
 import React, { useReducer } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createContext } from "react";
+
 
 export const UserContext = createContext();
 

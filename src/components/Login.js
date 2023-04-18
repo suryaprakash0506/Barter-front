@@ -9,17 +9,21 @@ const Login = () => {
   const [error, setError] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://barter-backend.onrender.com/login', {
+      const response = await fetch('/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
       })
+
       const data = await response.json();
+
       if (data) {
         localStorage.setItem("user", JSON.stringify({ name: data.name }));
+        localStorage.setItem('token', data.token);
         navigate('/');
         window.location.reload();
       } else {

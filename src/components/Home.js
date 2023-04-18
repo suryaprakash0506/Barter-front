@@ -5,7 +5,6 @@ import Search from './Search';
 import Spinner from './Spinner';
 import Filters from './Filters';
 import { useEffect, useState } from 'react';
-// import {getUserPosts} from "../services/Apis"
 
 const Home = () => {
 	const [loading, setLoading] = useState();
@@ -14,8 +13,7 @@ const Home = () => {
 	useEffect(() => {
 		setLoading(true); // set loading to true before the fetch request is initiated
 	  
-		fetch('https://barter-backend.onrender.com/posts', {
-		// fetch('http://localhost:5000/posts', {
+		fetch('http://localhost:3000/post', {
 		  method: 'GET',
 		  headers: { 'Content-Type': 'application/json' }
 		})
@@ -31,8 +29,8 @@ const Home = () => {
 	return (
 		<>
 			<Search />
-
 			<Filters/>
+			
 			<div style ={{textAlign: 'center', marginTop: '10px'}} >
 				{loading && <Spinner />}
 			</div>

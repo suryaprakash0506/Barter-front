@@ -48,11 +48,11 @@ const Navbar = () => {
       <nav className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
-          <div className="nav-logo" title="Barter Home">
+         <div className="nav-logo" title="Barter Home">
             <NavLink to="/">
               <img
                 className="nav-logo-img"
-                src="./images/barter.jpeg"
+                src="./images/barter.png"
                 alt=""
               />
             </NavLink>
