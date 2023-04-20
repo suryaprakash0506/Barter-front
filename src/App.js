@@ -5,7 +5,7 @@ import Learn from './components/Learn';
 import Login from './components/Login';
 import Modal from './components/Modal';
 import Signup from './components/Signup';
-import Navbar2 from './components/Navbar2';
+import Navbar from './components/Navbar';
 import Messages from './components/Messages';
 import Forgetpass from './components/Forgetpass';
 import UploadSettings from './components/UploadSettings';
@@ -46,7 +46,7 @@ function App() {
 
         <Router>
 
-          <Navbar2 />
+          <Navbar/>
           <Routing />
 
         </Router>

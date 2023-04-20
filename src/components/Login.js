@@ -24,11 +24,12 @@ const Login = () => {
       if (data) {
         localStorage.setItem("user", JSON.stringify({ name: data.name }));
         localStorage.setItem('token', data.token);
+
         navigate('/');
         window.location.reload();
       } else {
         setError("Invalid Credential");
-        navigate('/login');
+        navigate('/');
       }
     } catch (err) {
       console.error(err);

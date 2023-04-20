@@ -53,7 +53,7 @@ const Profile = (props) => {
 
     useEffect(() => {
         setLoading(true)
-        fetch('https://barter-backend.onrender.com/posts/user/:64315b8e68932a479176a776', {
+        fetch('/posts/user', {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
         })
@@ -165,5 +165,4 @@ const Profile = (props) => {
 }
 
 export default Profile
-
 
