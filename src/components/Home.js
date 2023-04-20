@@ -13,14 +13,14 @@ const Home = () => {
 	useEffect(() => {
 		setLoading(true); // set loading to true before the fetch request is initiated
 	  
-		fetch('http://localhost:3000/post', {
+		fetch('/post', {
 		  method: 'GET',
 		  headers: { 'Content-Type': 'application/json' }
 		})
 		  .then(response => response.json())
 		  .then(data => {
 			setPosts(data);
-			console.log(data);
+			// console.log(data);
 			setLoading(false); // set loading to false after the data is fetched
 		  })
 		  .catch(error => console.error(error));
